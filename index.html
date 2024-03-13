@@ -705,23 +705,23 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 								Correo electrónico							</label>
 														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Correo electrónico">
 											</div>
-								<div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_b6dda5e elementor-col-50">
-												<label for="form-field-field_b6dda5e" class="elementor-field-label">
+								<div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-categoria elementor-col-50">
+												<label for="form-field-categoria" class="elementor-field-label">
 								A qué categoría perteneces							</label>
 								<div class="elementor-field elementor-select-wrapper remove-before ">
 			<div class="select-caret-down-wrapper">
 				<svg aria-hidden="true" class="e-font-icon-svg e-eicon-caret-down" viewbox="0 0 571.4 571.4" xmlns="http://www.w3.org/2000/svg"><path d="M571 393Q571 407 561 418L311 668Q300 679 286 679T261 668L11 418Q0 407 0 393T11 368 36 357H536Q550 357 561 368T571 393Z"></path></svg>			</div>
-			<select name="form_fields[field_b6dda5e]" id="form-field-field_b6dda5e" class="elementor-field-textual elementor-size-sm">
+			<select name="form_fields[categoria]" id="form-field-categoria" class="elementor-field-textual elementor-size-sm">
 									<option value="Estética independiente">Estética independiente</option>
 									<option value="Clínica estética">Clínica estética</option>
 									<option value="Distribuidor">Distribuidor</option>
 							</select>
 		</div>
 						</div>
-								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_8ffec90 elementor-col-50">
-												<label for="form-field-field_8ffec90" class="elementor-field-label">
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-negocio elementor-col-50">
+												<label for="form-field-negocio" class="elementor-field-label">
 								Nombre de tu empresa o negocio							</label>
-														<input size="1" type="text" name="form_fields[field_8ffec90]" id="form-field-field_8ffec90" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Nombre de tu empresa o negocio">
+														<input size="1" type="text" name="form_fields[negocio]" id="form-field-negocio" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Nombre de tu empresa o negocio">
 											</div>
 								<div class="elementor-field-type-acceptance elementor-field-group elementor-column elementor-field-group-condiciones elementor-col-100 elementor-field-required elementor-mark-required">
 							<div class="elementor-field-subgroup">
@@ -772,9 +772,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 <script>
 function abrirConversacionWhatsApp() {
     // Mensaje fijo para enviar a WhatsApp
-    const mensajeWhatsApp = 'Hola, quiero asesoría para iniciar mi tratamiento de depilación láser..';
+    const mensajeWhatsApp = 'Hola, quisiera saber más información sobre los productos';
 
-    const numeroTelefono = '+573145897741'; // Reemplazar con el número de teléfono del destinatario
+    const numeroTelefono = '+573187934691'; // Reemplazar con el número de teléfono del destinatario
 
     const linkWhatsApp = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensajeWhatsApp)}`;
     window.open(linkWhatsApp, '_blank');
@@ -800,7 +800,7 @@ function handleSubmit(event) {
     closedpopup();
 
     // Ejecutar el webhook sin abrir la conversación de WhatsApp
-    fetch("https://hook.us1.make.com/7x5h9384rdpn06zyxdpngf9y182kfbwe", {
+    fetch("https://hook.us1.make.com/yx64f2akxpgdenyxqyrm19l52dvssajq", {
         body: JSON.stringify(value),
         headers: {
             Accept: 'application/json',
@@ -813,7 +813,7 @@ function handleSubmit(event) {
         
         // Llamada a la función evento
         evento();
-
+    abrirConversacionWhatsApp();
         // Mostrar la alerta de éxito
         successAlert();
     })
@@ -857,7 +857,7 @@ function utm_llenar() {
 }
 
 function closedpopup() {
-    const popup = document.querySelector('#elementor-popup-modal-931');
+    const popup = document.querySelector('#elementor-popup-modal-699');
     if (popup) {
         popup.style.display = 'none';
     }
@@ -1174,13 +1174,13 @@ function handleSubmit(event) {
                 document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
             }
             var name = 'pbid';
-            var pbidHash = "8b6f4b5545248ae1810c7e57cb48ad5f25428f4e51b2892a4cac790dd3b527ce";
+            var pbidHash = "9d5152b228cfd220fcefb56445ac88ce11b93d45d00a98547412932be07f83e0";
 
             if(pys_get_pbid(name) != pbidHash || pys_get_pbid(name) == '') { // prevent re send event if user update page
                 pys_set_pbid(name,pbidHash,180)
             }</script>
 	    <noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=756645766019391&ev=PageView&noscript=1&eid=756645766019391&cd%5Bpage_title%5D=Home&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=10&cd%5Bplugin%5D=PixelYourSite&cd%5Bevent_url%5D=armesso.fastandstatic.com%2F&cd%5Buser_role%5D=guest" alt=""></noscript>
-<link rel="stylesheet" id="elementor-post-699-css" href="/wp-content/uploads/elementor/css/post-699.css?ver=1710359081" media="all">
+<link rel="stylesheet" id="elementor-post-699-css" href="/wp-content/uploads/elementor/css/post-699.css?ver=1710370100" media="all">
 <link rel="stylesheet" id="e-animations-css" href="/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.19.4" media="all">
 <link rel="stylesheet" id="google-fonts-2-css" href="https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.4.3" media="all">
 <script src="/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.0.0" id="hello-theme-frontend-js"></script>
