@@ -56,7 +56,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 <link rel="stylesheet" id="elementor-pro-css" href="/wp-content/uploads/elementor/css/custom-pro-frontend-lite.min.css?ver=1712069088" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="/wp-content/uploads/elementor/css/global.css?ver=1712069089" media="all">
 <link rel="stylesheet" id="elementor-post-10-css" href="/wp-content/uploads/elementor/css/post-10.css?ver=1712071558" media="all">
-<link rel="stylesheet" id="elementor-post-1002-css" href="/wp-content/uploads/elementor/css/post-1002.css?ver=1712077050" media="all">
+<link rel="stylesheet" id="elementor-post-1002-css" href="/wp-content/uploads/elementor/css/post-1002.css?ver=1712085785" media="all">
 <link rel="stylesheet" id="elementor-post-769-css" href="/wp-content/uploads/elementor/css/post-769.css?ver=1712073785" media="all">
 <link rel="stylesheet" id="elementor-post-699-css" href="/wp-content/uploads/elementor/css/post-699.css?ver=1712069090" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Ubuntu%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.4.3" media="all">
@@ -1232,6 +1232,20 @@ $(document).ready(function () {
             data['dateTime'] = formattedDateTime;
             data['deviceType'] = deviceType;
 
+            // Agregar UTM parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const utm_source = urlParams.get('utm_source');
+            const utm_medium = urlParams.get('utm_medium');
+            const utm_campaign = urlParams.get('utm_campaign');
+            const utm_term = urlParams.get('utm_term');
+            const utm_content = urlParams.get('utm_content');
+
+            data['utm_source'] = utm_source;
+            data['utm_medium'] = utm_medium;
+            data['utm_campaign'] = utm_campaign;
+            data['utm_term'] = utm_term;
+            data['utm_content'] = utm_content;
+
             // Muestra la alerta con la información del usuario
             Swal.fire({
                 title: "¡Tu mensaje fue recibido!",
@@ -1618,7 +1632,7 @@ PRODUCTO</h2>		</div>
                 document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
             }
             var name = 'pbid';
-            var pbidHash = "c5d7db7aea61a1db0c874b14bb15de492481306e76f3df9fd4018850660f1750";
+            var pbidHash = "990c7504186c42afa328a6048b5eee3b1ab0088bad3b1ab606861b8cc9bec0b8";
 
             if(pys_get_pbid(name) != pbidHash || pys_get_pbid(name) == '') { // prevent re send event if user update page
                 pys_set_pbid(name,pbidHash,180)
