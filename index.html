@@ -62,8 +62,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="stylesheet" id="widget-social-icons-css" href="/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.28.4" media="all">
 <link rel="stylesheet" id="e-apple-webkit-css" href="/wp-content/uploads/elementor/css/custom-apple-webkit.min.css?ver=1745956769" media="all">
 <link rel="stylesheet" id="elementor-post-10-css" href="/wp-content/uploads/elementor/css/post-10.css?ver=1745956773" media="all">
-<link rel="stylesheet" id="elementor-post-1002-css" href="/wp-content/uploads/elementor/css/post-1002.css?ver=1745956774" media="all">
-<link rel="stylesheet" id="elementor-post-699-css" href="/wp-content/uploads/elementor/css/post-699.css?ver=1745956774" media="all">
+<link rel="stylesheet" id="elementor-post-1002-css" href="/wp-content/uploads/elementor/css/post-1002.css?ver=1745960188" media="all">
+<link rel="stylesheet" id="elementor-post-699-css" href="/wp-content/uploads/elementor/css/post-699.css?ver=1745960189" media="all">
 <link rel="stylesheet" id="elementor-gf-local-ubuntu-css" href="/wp-content/uploads/elementor/google-fonts/css/ubuntu.css?ver=1742393007" media="all">
 <link rel="stylesheet" id="elementor-gf-local-poppins-css" href="/wp-content/uploads/elementor/google-fonts/css/poppins.css?ver=1742393008" media="all">
 <link rel="stylesheet" id="elementor-gf-local-roboto-css" href="/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1742393012" media="all">
@@ -1406,7 +1406,7 @@ jQuery(document).ready(function($) {
 				<div class="elementor-widget-container">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
-										<span class="elementor-icon-list-text">8:01 pm</span>
+										<span class="elementor-icon-list-text">8:57 pm</span>
 									</li>
 						</ul>
 						</div>
@@ -1942,7 +1942,7 @@ function inicializarFormulario() {
         
         // Añadir nuevo evento
         selectProducto.addEventListener('change', function() {
-            const showOtro = this.value === 'Otro: ¿Cuál?';
+            const showOtro = this.value === 'Productos del catálogo';
             const otroGroup = otroCampo.closest('.elementor-field-group');
             if (otroGroup) {
                 otroGroup.style.display = showOtro ? 'block' : 'none';
@@ -2368,7 +2368,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
             }
             var name = 'pbid';
-            var pbidHash = "f2ae6358c233891b4b4a8cd9e3277e14f350c9c7fb3158f0e43ec57276984e6a";
+            var pbidHash = "f00ddfd8a360d43d66b2c242917a231af5d045f1f2e4883b59cf8b351d1368ca";
 
             if(pys_get_pbid(name) != pbidHash || pys_get_pbid(name) == '') { // prevent re send event if user update page
                 pys_set_pbid(name,pbidHash,180)

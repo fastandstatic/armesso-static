@@ -68,8 +68,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="stylesheet" id="e-apple-webkit-css" href="/wp-content/uploads/elementor/css/custom-apple-webkit.min.css?ver=1745956769" media="all">
 <link rel="stylesheet" id="elementor-post-1046-css" href="/wp-content/uploads/elementor/css/post-1046.css?ver=1745957181" media="all">
 <link rel="stylesheet" id="elementor-post-1092-css" href="/wp-content/uploads/elementor/css/post-1092.css?ver=1745956779" media="all">
-<link rel="stylesheet" id="elementor-post-1002-css" href="/wp-content/uploads/elementor/css/post-1002.css?ver=1745956774" media="all">
-<link rel="stylesheet" id="elementor-post-699-css" href="/wp-content/uploads/elementor/css/post-699.css?ver=1745956774" media="all">
+<link rel="stylesheet" id="elementor-post-1002-css" href="/wp-content/uploads/elementor/css/post-1002.css?ver=1745960188" media="all">
+<link rel="stylesheet" id="elementor-post-699-css" href="/wp-content/uploads/elementor/css/post-699.css?ver=1745960189" media="all">
 <link rel="stylesheet" id="elementor-gf-local-ubuntu-css" href="/wp-content/uploads/elementor/google-fonts/css/ubuntu.css?ver=1742393007" media="all">
 <link rel="stylesheet" id="elementor-gf-local-poppins-css" href="/wp-content/uploads/elementor/google-fonts/css/poppins.css?ver=1742393008" media="all">
 <link rel="stylesheet" id="elementor-gf-local-roboto-css" href="/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1742393012" media="all">
@@ -1242,7 +1242,7 @@ function inicializarFormulario() {
         
         // Añadir nuevo evento
         selectProducto.addEventListener('change', function() {
-            const showOtro = this.value === 'Otro: ¿Cuál?';
+            const showOtro = this.value === 'Productos del catálogo';
             const otroGroup = otroCampo.closest('.elementor-field-group');
             if (otroGroup) {
                 otroGroup.style.display = showOtro ? 'block' : 'none';
@@ -2112,7 +2112,7 @@ jQuery(document).ready(function($) {
 				<div class="elementor-widget-container">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
-										<span class="elementor-icon-list-text">8:06 pm</span>
+										<span class="elementor-icon-list-text">9:02 pm</span>
 									</li>
 						</ul>
 						</div>
@@ -2172,7 +2172,7 @@ jQuery(document).ready(function($) {
                 document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
             }
             var name = 'pbid';
-            var pbidHash = "16c96faa609a34dc11c4b152a0291517b35214164a695a555624685ae99d0748";
+            var pbidHash = "1d8683dc83ca7dcae4553aef8fdf9170b0760a0e5e2da242da204ece49c73b56";
 
             if(pys_get_pbid(name) != pbidHash || pys_get_pbid(name) == '') { // prevent re send event if user update page
                 pys_set_pbid(name,pbidHash,180)
